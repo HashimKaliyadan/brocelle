@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORCELLE - REAL TASTE OF CHINEES</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section id="classes">
+        <div class="class1 item">
+            <div>
+                <h3>Asian</h3>
+                <h1>Delicious <br> Breakfast</h1>
+            </div>
+        </div>
+        <div class="class2 item">
+            <div>
+                <h3>Breakfast</h3>
+                <h1>Coffee <br> Time</h1>
+            </div>
+        </div>
+        <div class="class3 item">
+            <div>
+                <h3>Vegan</h3>
+                <h1>Vegan <br> Burger</h1>   
+            </div>
+        </div>
+        <div class="class4 item">
+            <div>
+                <h3>Italian</h3>
+                <h1>Homemade <br> Honey</h1>
+            </div>
+        </div>
+        <div class="class5 item">
+            <div>
+                <h3>Italian</h3>
+                <h1>Salad <br> Style</h1>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="menu.html">
+                    Menu
+                </a>
+            </li>
+            <li>
+                <a href="store.html">
+                    Store
+                </a>
+            </li>
+            <li>
+                <a href="class.html">
+                    Class
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        window.addEventListener("wheel", function(event) {
+            const delta = Math.sign(event.deltaY);
+            const scrollSpeed = 10; // Adjust the scroll speed
+            if (delta > 0) {
+                // Scrolling down
+                document.getElementById("classes").scrollLeft += scrollSpeed;
+            } else {
+                // Scrolling up
+                document.getElementById("classes").scrollLeft -= scrollSpeed;
+            }
+            event.preventDefault(); // Prevent the default scroll behavior
+        });
+    </script>
+
+</body>
+</html>
